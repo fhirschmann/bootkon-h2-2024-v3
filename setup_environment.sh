@@ -53,7 +53,7 @@ gcloud auth login
 
 # Grant IAM roles
 chmod 700 prepare-environment/assign_roles.sh
-#./prepare-environment/assign_roles.sh $PROJECT_ID $GCP_USERNAME
+./prepare-environment/assign_roles.sh $PROJECT_ID $GCP_USERNAME
 
 # Create default VPC network and enable private access
 SUBNET="default"

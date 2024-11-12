@@ -16,6 +16,7 @@ gcloud config set project $PROJECT_ID
 gcloud services enable storage-component.googleapis.com notebooks.googleapis.com serviceusage.googleapis.com cloudresourcemanager.googleapis.com pubsub.googleapis.com compute.googleapis.com metastore.googleapis.com datacatalog.googleapis.com analyticshub.googleapis.com bigquery.googleapis.com dataplex.googleapis.com datalineage.googleapis.com dataform.googleapis.com dataproc.googleapis.com bigqueryconnection.googleapis.com aiplatform.googleapis.com
 
 # Install Git and Git LFS
+sudo apt-get update
 sudo apt-get install git
 sudo apt-get install git-lfs
 git lfs install

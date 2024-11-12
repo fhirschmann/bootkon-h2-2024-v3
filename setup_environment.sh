@@ -1,9 +1,14 @@
 #!/bin/bash -x
 
+if [ $# -ne 3 ]; then
+    echo "Usage: $0 <PROJECT_ID> <GCP_USERNAME> <REGION>"
+    exit 1
+fi
+
 # Get the inputs from command-line arguments
-PROJECT_ID=$(gcloud config get-value project)
-GCP_USERNAME=$(gcloud config list --format='value(core.account)')
-REGION="us-central1"
+PROJECT_ID=$1
+GCP_USERNAME=$2
+REGION=$3
 
 gcloud config set project $PROJECT_ID
 
